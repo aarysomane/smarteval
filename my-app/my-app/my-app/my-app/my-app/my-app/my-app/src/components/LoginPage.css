@@ -1,0 +1,167 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; 
+  width: 100%;
+  background: linear-gradient(135deg, #0f2027, #1b123f, #2c5364);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+#vanta {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  background: linear-gradient(135deg, #0f2027, #1b123f, #2c5364);
+  font-family: 'Segoe UI', sans-serif;
+  padding: 1rem;
+  border-radius: 20px;
+  border-color: rgb(aliceblue, rgb(152, 152, 209), rgb(34, 34, 79));
+  border-style: solid;
+  z-index: 1;
+  position: relative;
+}
+
+.login-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2.5rem;
+  border-radius: 15px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+  width: 350px;
+  text-align: center;
+  color: white;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.title {
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #f8f7f6, #cdcacb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.role-switch {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.role-switch button {
+  padding: 0.5rem 1.2rem;
+  border-radius: 25px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.role-switch button.active {
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  color: white;
+}
+
+.role-switch button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* ===== Form Inputs ===== */
+form input {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+form input:focus {
+  border: 1px solid #ff6a00;
+}
+
+/* ===== Login Button ===== */
+.login-btn {
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  color: white;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 106, 0, 0.5);
+}
+
+/* ===== Signup Link ===== */
+.signup-text {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.signup-text a {
+  color: #ff6a00;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Animation ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 500px) {
+  .login-card {
+    width: 100%;
+    padding: 1.5rem;
+  }
+  .title {
+    font-size: 1.5rem;
+  }
+}
+

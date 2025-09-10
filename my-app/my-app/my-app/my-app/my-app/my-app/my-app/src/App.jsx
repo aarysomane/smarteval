@@ -1,10 +1,9 @@
 import React from "react";
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginPage from "./components/LoginPage";
 import StudentPage from "./components/StudentPage";
 import FacultyPage from "./components/FacultyPage";
-import SignupPage from "./components/SignupPage";
-<compo></compo>
+import SignupPage from "./components/SignupPage";  
 
 function App() {
   return (
