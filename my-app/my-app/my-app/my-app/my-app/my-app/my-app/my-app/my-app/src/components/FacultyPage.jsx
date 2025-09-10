@@ -1,4 +1,4 @@
-//import "./FacultyPage.css";
+import "./FacultyPage.css";
 
 export default function FacultyPage({ faculty }) {
   const { facultyName } = faculty || {};

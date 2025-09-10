@@ -10,18 +10,14 @@ export default function StudentPage({ student }) {
         <li><span>Profile</span></li>
   <li><span>Analysis</span></li>
   <li><span>Attempt Quiz</span></li>
-  <li><span>Resources</span></li>
   
         </ul>
       </div>
 
       <main className="main-content">
-        <h1>Welcome Student !</h1>
-        <p>Overall Progress</p>
+        <h2>Dashboard Main Content</h2>
+        <p>This area will display upcoming quizzes, scores, notifications, and more.</p>
       </main>
-      <div className="chatbot">
     </div>
-    </div>
-    
   );
 }
