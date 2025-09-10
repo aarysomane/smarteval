@@ -25,7 +25,7 @@
   
   /* Expand sidebar on hover */
   .sidebar:hover {
-    width: 300px;
+    width: 200px;
   }
   
   /* Sidebar navigation */
@@ -79,5 +79,4 @@
   .sidebar:hover ~ .main-content {
     margin-left: 200px; /* expanded sidebar width */
   }
-  
   
